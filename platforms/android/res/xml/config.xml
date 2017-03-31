@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="ca.edumedia.toug0008.giftr" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <name>giftr-toug0008</name>
+    <description> A sample Apache Cordova application that responds to the deviceready event. </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io"> Apache Cordova Team </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="market:*" />
+    <splash density="land-mdpi" src="res/android/screens/screen-mdpi-landscape.png" />
+    <splash density="land-hdpi" src="res/android/screens/screen-ldpi-landscape.png" />
+    <splash density="land-xhdpi" src="res/android/screens/screen-xhdpi-landscape.png" />
+    <splash density="land-xxhdpi" src="res/android/screens/screen-xxhdpi-landscape.png" />
+    <splash density="land-xxxhdpi" src="res/android/screens/screen-xxxhdpi-landscape.png" />
+    <splash density="port-mdpi" src="res/android/screens/screen-mdpi-portrait.png" />
+    <splash density="port-hdpi" src="res/android/screens/screen-hdpi-portrait.png" />
+    <splash density="port-xhdpi" src="res/android/screens/screen-xhdpi-portrait.png" />
+    <splash density="port-xxhdpi" src="res/android/screens/screen-xxhdpi-portrait.png" />
+    <splash density="port-xxxhdpi" src="res/android/screens/screen-xxxhdpi-portrait.png" />
+    <icon density="mdpi" src="res/android/icons/icon-48-mdpi.png" />
+    <icon density="hdpi" src="res/android/icons/icon-72-hdpi.png" />
+    <icon density="xhdpi" src="res/android/icons/icon-96-xhdpi.png" />
+    <icon density="xxhdpi" src="res/android/icons/icon-144-xxhdpi.png" />
+    <icon density="xxxhdpi" src="res/android/icons/icon-192-xxxhdpi.png" />
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="AutoHideSplashScreen" value="true" />
+    <preference name="SplashScreenDelay" value="5000" />
+    <preference name="SplashMaintainAspectRatio" value="true" />
+    <preference name="SplashShowOnlyFirstTime" value="false" />
+</widget>

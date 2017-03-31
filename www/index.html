@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="utf-8" />
+        <meta http-equiv="content-security-policy" content="default-src 'self' data: gap: http://*.edumedia.ca 'unsafe-inline' https://*.edumedia.ca 'unsafe-eval'" />
+        <meta name="format-detection" content="telephone=no"/>
+        <meta name="msapplication-tap-highlight" content="no"/>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
+        
+        <!-- Include the compiled Ratchet CSS -->
+        <link href="css/ratchet.min.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Giftr</title>
+        
+    </head>
+    <body>
+        <header class="bar bar-nav">
+            <a id="addPerson" class="btn btn-link btn-nav pull-right" href="#personModal">
+                Add Person
+                <span class="icon icon-plus"></span>
+            </a>
+            <h1 class="title">GIFTR</h1>
+        </header>
+        
+        
+        <div class="content">
+            <!-- read through localStorage for contacts -->
+            <ul class="table-view" id="contact-list">
+                   <li class="table-view-cell">
+                    <span id="noFriends" class="name">You have no friends!</span>
+                   </li>
+            </ul>
+        </div>
+        
+        <div id="personModal" class="modal">
+            <header class="bar bar-nav">
+                <a class="icon icon-close pull-right" href="#personModal"></a>
+                <h1 class="title">Person Edit/Add</h1>
+            </header>
+
+            <div class="content">
+                <div class="content-padded">
+                    <form class="input-group">
+                        <div class="input-row">
+                            <label>Full name</label>
+                            <input type="text" id= "fullName" placeholder="First Last"/>
+                        </div>
+                        <div class="input-row">
+                            <label>D.O.B.</label>
+                            <input type="date" id="dob" placeholder="yyyy-mm-dd"/>
+                        </div>
+                    </form>
+                    <p class="content-padded">
+                        <a id="cancel" class="btn btn-block" href="#personModal">
+                            <span class="icon icon-close"></span>
+                            Cancel <!-- dispatch click to the close button -->
+                        </a>
+                        <a id="save" class="btn btn-primary btn-block" href="#personModal">
+                            <span class="icon icon-check"></span>
+                            Save  <!-- process the info then dispatch click to the close button -->
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <!-- include the compiled Ratchet JS -->
+        <script src="js/ratchet.min.js"></script>
+        <script src="js/moment.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>

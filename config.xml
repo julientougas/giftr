@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+    <widget id="ca.edumedia.toug0008.giftr" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+        <name>giftr-toug0008</name>
+        <description> A sample Apache Cordova application that responds to the deviceready event. </description>
+        <author email="dev@cordova.apache.org" href="http://cordova.io"> Apache Cordova Team </author>
+        <content src="index.html" />
+        <plugin name="cordova-plugin-whitelist" spec="1" />
+        <access origin="*" />
+        <allow-intent href="http://*/*" />
+        <allow-intent href="https://*/*" />
+        <allow-intent href="tel:*" />
+        <allow-intent href="sms:*" />
+        <allow-intent href="mailto:*" />
+        <allow-intent href="geo:*" />
+        <platform name="android">
+            <allow-intent href="market:*" />
+            <splash src="res/android/screens/screen-mdpi-landscape.png" density="land-mdpi" />
+            <splash src="res/android/screens/screen-ldpi-landscape.png" density="land-hdpi" />
+            <splash src="res/android/screens/screen-xhdpi-landscape.png" density="land-xhdpi" />
+            <splash src="res/android/screens/screen-xxhdpi-landscape.png" density="land-xxhdpi" />
+            <splash src="res/android/screens/screen-xxxhdpi-landscape.png" density="land-xxxhdpi" />
+            <!---->
+            <splash src="res/android/screens/screen-mdpi-portrait.png" density="port-mdpi" />
+            <splash src="res/android/screens/screen-hdpi-portrait.png" density="port-hdpi" />
+            <splash src="res/android/screens/screen-xhdpi-portrait.png" density="port-xhdpi" />
+            <splash src="res/android/screens/screen-xxhdpi-portrait.png" density="port-xxhdpi" />
+            <splash src="res/android/screens/screen-xxxhdpi-portrait.png" density="port-xxxhdpi" />
+            <!---->
+            <icon src="res/android/icons/icon-48-mdpi.png" density="mdpi" />
+            <icon src="res/android/icons/icon-72-hdpi.png" density="hdpi" />
+            <icon src="res/android/icons/icon-96-xhdpi.png" density="xhdpi" />
+            <icon src="res/android/icons/icon-144-xxhdpi.png" density="xxhdpi" />
+            <icon src="res/android/icons/icon-192-xxxhdpi.png" density="xxxhdpi" />
+            <!---->
+        </platform>
+        <preference name="AutoHideSplashScreen" value="true" />
+        <!-- don't wait for script to hide the splashscreen -->
+        <preference name="SplashScreenDelay" value="5000" />
+        <!--  wait 10 seconds before hiding splashscreen -->
+        <preference name="SplashMaintainAspectRatio" value="true" />
+        <preference name="SplashShowOnlyFirstTime" value="false" />
+        <platform name="ios">
+            <allow-intent href="itms:*" />
+            <allow-intent href="itms-apps:*" /> </platform>
+    </widget>
